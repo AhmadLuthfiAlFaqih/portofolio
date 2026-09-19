@@ -190,129 +190,290 @@
     </div>
 </div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            
-            <!-- Filter Tabs -->
-            <div class="filter-tabs">
-                <button class="filter-btn active" data-filter="all">Semua</button>
-                <button class="filter-btn" data-filter="networking">Networking</button>
-                <button class="filter-btn" data-filter="server">Server</button>
-                <button class="filter-btn" data-filter="application">Application</button>
-            </div>
-            
-            <div class="projects-grid">
-                <div class="project-card" data-category="server">
-                    <div class="project-image">
-                        <img src="img/instalasi  web server.png" alt="Nginx Web Server">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Instalasi Web Server Menggunakan Nginx pada Linux Server</h3>
-                        <div class="project-tools">
-                            <span>Linux</span>
-                            <span>Nginx</span>
-                            <span>Ubuntu Server</span>
-                        </div>
-                        <p class="project-description">Saya melakukan instalasi Nginx pada server Linux untuk membuat website yang cepat dan andal.</p>
-                        <div class="project-footer">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="application">
-                    <div class="project-image">
-                        <img src="img/MEMBUAT PROGRAM EKSTRAKSI.png" alt="Aplikasi Ekstraksi">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Aplikasi Ekstraksi Rekursif Otomatis</h3>
-                        <div class="project-tools">
-                            <span>Python</span>
-                            <span>Tkinter</span>
-                            <span>Telegram API</span>
-                        </div>
-                        <p class="project-description">Mengembangkan aplikasi GUI Python untuk ekstraksi arsip rekursif yang efisien, dilengkapi dengan fitur: auto-resolve sandi dari Telegram, auto-rename berbasis mapping, dan sistem logging yang dapat difilter (Info Penuh/Error) untuk akurasi pemrosesan file.</p>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="server">
-                    <div class="project-image">
-                        <img src="img/winserver.png" alt="Windows Server">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Install Windows Server on Proxmox</h3>
-                        <div class="project-tools">
-                            <span>Windows Server</span>
-                            <span>Proxmox</span>
-                            <span>VirtIO</span>
-                        </div>
-                        <p class="project-description">Menginstal dan mengonfigurasi Windows Server di Proxmox secara efisien, mencakup pembuatan VM, pemasangan driver VirtIO, integrasi Guest Agent.</p>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="networking">
-                    <div class="project-image">
-                        <img src="img/Membuat jaringan LAN secara sederhana.jpg" alt="Instalasi Jaringan LAN">
-                    </div>
+ <!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container">
 
-                    <div class="project-content">
-                        <h3 class="project-title">Instalasi Jaringan LAN</h3>
-                        <div class="project-tools">
-                            <span>Router</span>
-                            <span>Kabel LAN</span>
-                            <span>Laptop</span>
-                            <span>OS Linux</span>
-                        </div>
-                        <p class="project-description">Melakukan instalasi dan konfigurasi jaringan LAN untuk praktikum di SMK Telkom Sidoarjo.</p>
-                    </div>
+        <h2 class="section-title">Projects</h2>
 
-                </div>
-                <div class="project-card" data-category="networking">
-                    <div class="project-image">
-                        <img src="img/uji terima.jpg" alt="uji terima">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Uji Terima</h3>
-                        <div class="project-tools">
-                            <span>OPM</span>
-                        </div>
-                        <p class="project-description">Melakukan pengecekan apakah pembangunan penambahan telah sesuai dengan standart perusahaan.</p>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="server">
-                    <div class="project-image">
-                        <img src="img/instalasi beberapa web server pada 1 server.png" alt="Web Tunnel Server">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Web Tunnel Server Configuration</h3>
-                        <div class="project-tools">
-                            <span>Linux</span>
-                            <span>SSH</span>
-                            <span>Ubuntu Server</span>
-                            <span>Nginx Server</span>
-                        </div>
-                        <p class="project-description">Konfigurasi server tunnel untuk terhubung dengan internet filtering menggunakan Ubuntu dan Nginx server.</p>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="application">
-                    <div class="project-image">
-                        <img src="img/absensi visualisasi.png" alt="Dashboard Absensi">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Dashboard Absensi PKL Menggunakan Looker</h3>
-                        <div class="project-tools">
-                            <span>spreadsheets</span>
-                            <span>Looker studio</span>
-                        </div>
-                        <p class="project-description">Membuat dashboard visualisasi absensi sebagai monitoring sebuah unit</p>
-                    </div>
-                </div>
-            </div>
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">
+                Semua
+            </button>
+
+            <button class="filter-btn" data-filter="networking">
+                Networking
+            </button>
+
+            <button class="filter-btn" data-filter="server">
+                Server
+            </button>
+
+            <button class="filter-btn" data-filter="application">
+                Application
+            </button>
         </div>
-    </section>
+
+        <div class="projects-grid">
+
+            <!-- Project -->
+            <article class="project-card" data-category="server">
+
+                <div class="project-image">
+                    <img
+                        src="img/instalasi  web server.png"
+                        alt="Instalasi Nginx Web Server"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        Server
+                    </span>
+
+                    <h3 class="project-title">
+                        Instalasi Web Server Menggunakan Nginx
+                    </h3>
+
+                    <div class="project-tools">
+                        <span>Linux</span>
+                        <span>Nginx</span>
+                        <span>Ubuntu Server</span>
+                    </div>
+
+                    <p class="project-description">
+                        Melakukan instalasi dan konfigurasi Nginx
+                        pada Linux Server untuk menjalankan
+                        layanan web.
+                    </p>
+
+                </div>
+            </article>
+
+
+            <!-- Project -->
+            <article class="project-card" data-category="application">
+
+                <div class="project-image">
+                    <img
+                        src="img/MEMBUAT PROGRAM EKSTRAKSI.png"
+                        alt="Aplikasi Ekstraksi Rekursif"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        Application
+                    </span>
+
+                    <h3 class="project-title">
+                        Aplikasi Ekstraksi Rekursif Otomatis
+                    </h3>
+
+                    <div class="project-tools">
+                        <span>Python</span>
+                        <span>Tkinter</span>
+                        <span>Telegram API</span>
+                    </div>
+
+                    <p class="project-description">
+                        Mengembangkan aplikasi GUI Python untuk
+                        ekstraksi arsip secara rekursif dengan
+                        fitur auto-resolve password, auto-rename,
+                        dan logging.
+                    </p>
+
+                </div>
+            </article>
+
+
+            <!-- Project -->
+            <article class="project-card" data-category="server">
+
+                <div class="project-image">
+                    <img
+                        src="img/winserver.png"
+                        alt="Windows Server pada Proxmox"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        Server
+                    </span>
+
+                    <h3 class="project-title">
+                        Install Windows Server on Proxmox
+                    </h3>
+
+                    <div class="project-tools">
+                        <span>Windows Server</span>
+                        <span>Proxmox</span>
+                        <span>VirtIO</span>
+                    </div>
+
+                    <p class="project-description">
+                        Menginstal dan mengonfigurasi Windows Server
+                        pada Proxmox, termasuk VM, VirtIO, dan
+                        Guest Agent.
+                    </p>
+
+                </div>
+            </article>
+
+
+            <!-- Project -->
+            <article class="project-card" data-category="networking">
+
+                <div class="project-image">
+                    <img
+                        src="img/Membuat jaringan LAN secara sederhana.jpg"
+                        alt="Instalasi Jaringan LAN"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        Networking
+                    </span>
+
+                    <h3 class="project-title">
+                        Instalasi Jaringan LAN
+                    </h3>
+
+                    <div class="project-tools">
+                        <span>Router</span>
+                        <span>Kabel LAN</span>
+                        <span>Laptop</span>
+                        <span>Linux</span>
+                    </div>
+
+                    <p class="project-description">
+                        Melakukan instalasi dan konfigurasi
+                        jaringan LAN untuk praktikum.
+                    </p>
+
+                </div>
+            </article>
+
+
+            <!-- Project -->
+            <article class="project-card" data-category="networking">
+
+                <div class="project-image">
+                    <img
+                        src="img/uji terima.jpg"
+                        alt="Uji Terima Jaringan"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        Networking
+                    </span>
+
+                    <h3 class="project-title">
+                        Uji Terima
+                    </h3>
+
+                    <div class="project-tools">
+                        <span>OPM</span>
+                    </div>
+
+                    <p class="project-description">
+                        Melakukan pengecekan hasil pembangunan
+                        jaringan untuk memastikan kesesuaiannya
+                        dengan standar perusahaan.
+                    </p>
+
+                </div>
+            </article>
+
+
+            <!-- Project -->
+            <article class="project-card" data-category="server">
+
+                <div class="project-image">
+                    <img
+                        src="img/instalasi beberapa web server pada 1 server.png"
+                        alt="Web Tunnel Server"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        Server
+                    </span>
+
+                    <h3 class="project-title">
+                        Web Tunnel Server Configuration
+                    </h3>
+
+                    <div class="project-tools">
+                        <span>Linux</span>
+                        <span>SSH</span>
+                        <span>Ubuntu Server</span>
+                        <span>Nginx</span>
+                    </div>
+
+                    <p class="project-description">
+                        Melakukan konfigurasi server tunnel
+                        menggunakan Ubuntu dan Nginx.
+                    </p>
+
+                </div>
+            </article>
+
+
+            <!-- Project -->
+            <article class="project-card" data-category="application">
+
+                <div class="project-image">
+                    <img
+                        src="img/absensi visualisasi.png"
+                        alt="Dashboard Absensi PKL"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        Application
+                    </span>
+
+                    <h3 class="project-title">
+                        Dashboard Absensi PKL Menggunakan Looker
+                    </h3>
+
+                    <div class="project-tools">
+                        <span>Spreadsheets</span>
+                        <span>Looker Studio</span>
+                    </div>
+
+                    <p class="project-description">
+                        Membuat dashboard visualisasi absensi
+                        untuk membantu monitoring unit.
+                    </p>
+
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
 
     <section id="experience" class="section bg-light">
     <div class="container">
@@ -370,25 +531,88 @@
     </div>
 </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-card">
-                <h3>SMK Telkom Sidoarjo</h3>
-                <div class="education-major">Teknik Jaringan Akses Telekomunikasi</div>
-                <div class="education-period">2023 – Sekarang</div>
-                <div class="education-achievements">
-                    <h4>Prestasi:</h4>
-                    <ul>
-                        <li>Semi Finalis APP Development Competition 2024</li>
-                        <li>Top 10 Techfest Cyber Security 2024</li>
-                        <li>Peserta netcomp cyber security 2025</li>
-                    </ul>
+<section id="education" class="section">
+    <div class="container">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-grid">
+
+            <article class="education-card">
+
+                <div class="education-icon">
+                    <i class="fas fa-school"></i>
                 </div>
-            </div>
+
+                <div class="education-content">
+
+                    <span class="education-period">
+                        2023 – 2026
+                    </span>
+
+                    <h3>SMK Telkom Sidoarjo</h3>
+
+                    <div class="education-major">
+                        Teknik Jaringan Akses Telekomunikasi
+                    </div>
+
+                    <div class="education-achievements">
+
+                        <h4>
+                            <i class="fas fa-trophy"></i>
+                            Prestasi
+                        </h4>
+
+                        <ul>
+                            <li>
+                                Semi Finalis APP Development
+                                Competition 2024
+                            </li>
+
+                            <li>
+                                Top 10 Techfest Cyber Security
+                                2024
+                            </li>
+
+                            <li>
+                                Peserta Netcomp Cyber Security
+                                2025
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="education-card">
+
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+
+                <div class="education-content">
+
+                    <span class="education-period">
+                        2026 – Sekarang
+                    </span>
+
+                    <h3>Telkom University</h3>
+
+                    <div class="education-major">
+                        S1 Teknologi Informasi
+                    </div>
+
+                </div>
+
+            </article>
+
         </div>
-    </section>
+
+    </div>
+</section>
 
     <!-- Certifications Section -->
     <section id="certifications" class="section bg-light">
@@ -570,13 +794,17 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    <!-- Back to Top -->
+    <button
+        id="back-to-top"
+        class="back-to-top"
+        aria-label="Kembali ke atas"
+    >
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+
 </body>
-
 </html>
-
-
