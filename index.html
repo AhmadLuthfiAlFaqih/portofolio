@@ -218,7 +218,6 @@
 
             <!-- Project -->
             <article class="project-card" data-category="server">
-
                 <div class="project-image">
                     <img
                         src="img/instalasi  web server.png"
@@ -228,7 +227,6 @@
                 </div>
 
                 <div class="project-content">
-
                     <span class="project-category">
                         Server
                     </span>
@@ -248,14 +246,11 @@
                         pada Linux Server untuk menjalankan
                         layanan web.
                     </p>
-
                 </div>
             </article>
 
-
             <!-- Project -->
             <article class="project-card" data-category="application">
-
                 <div class="project-image">
                     <img
                         src="img/MEMBUAT PROGRAM EKSTRAKSI.png"
@@ -265,7 +260,6 @@
                 </div>
 
                 <div class="project-content">
-
                     <span class="project-category">
                         Application
                     </span>
@@ -286,14 +280,11 @@
                         fitur auto-resolve password, auto-rename,
                         dan logging.
                     </p>
-
                 </div>
             </article>
 
-
             <!-- Project -->
             <article class="project-card" data-category="server">
-
                 <div class="project-image">
                     <img
                         src="img/winserver.png"
@@ -303,7 +294,6 @@
                 </div>
 
                 <div class="project-content">
-
                     <span class="project-category">
                         Server
                     </span>
@@ -323,14 +313,11 @@
                         pada Proxmox, termasuk VM, VirtIO, dan
                         Guest Agent.
                     </p>
-
                 </div>
             </article>
 
-
             <!-- Project -->
             <article class="project-card" data-category="networking">
-
                 <div class="project-image">
                     <img
                         src="img/Membuat jaringan LAN secara sederhana.jpg"
@@ -340,7 +327,6 @@
                 </div>
 
                 <div class="project-content">
-
                     <span class="project-category">
                         Networking
                     </span>
@@ -360,14 +346,11 @@
                         Melakukan instalasi dan konfigurasi
                         jaringan LAN untuk praktikum.
                     </p>
-
                 </div>
             </article>
 
-
             <!-- Project -->
             <article class="project-card" data-category="networking">
-
                 <div class="project-image">
                     <img
                         src="img/uji terima.jpg"
@@ -377,7 +360,6 @@
                 </div>
 
                 <div class="project-content">
-
                     <span class="project-category">
                         Networking
                     </span>
@@ -395,14 +377,11 @@
                         jaringan untuk memastikan kesesuaiannya
                         dengan standar perusahaan.
                     </p>
-
                 </div>
             </article>
 
-
             <!-- Project -->
             <article class="project-card" data-category="server">
-
                 <div class="project-image">
                     <img
                         src="img/instalasi beberapa web server pada 1 server.png"
@@ -412,7 +391,6 @@
                 </div>
 
                 <div class="project-content">
-
                     <span class="project-category">
                         Server
                     </span>
@@ -432,14 +410,11 @@
                         Melakukan konfigurasi server tunnel
                         menggunakan Ubuntu dan Nginx.
                     </p>
-
                 </div>
             </article>
 
-
             <!-- Project -->
             <article class="project-card" data-category="application">
-
                 <div class="project-image">
                     <img
                         src="img/absensi visualisasi.png"
@@ -449,7 +424,6 @@
                 </div>
 
                 <div class="project-content">
-
                     <span class="project-category">
                         Application
                     </span>
@@ -467,13 +441,40 @@
                         Membuat dashboard visualisasi absensi
                         untuk membantu monitoring unit.
                     </p>
-
                 </div>
             </article>
 
         </div>
     </div>
 </section>
+
+<!-- JavaScript untuk fungsionalitas filter -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const filterBtns = document.querySelectorAll(".filter-btn");
+        const projectCards = document.querySelectorAll(".project-card");
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener("click", function () {
+                // Hapus kelas 'active' dari semua tombol, lalu tambahkan ke tombol yang diklik
+                filterBtns.forEach(b => b.classList.remove("active"));
+                this.classList.add("active");
+
+                const filterValue = this.getAttribute("data-filter");
+
+                projectCards.forEach(card => {
+                    const cardCategory = card.getAttribute("data-category");
+
+                    if (filterValue === "all" || cardCategory === filterValue) {
+                        card.style.display = "block"; // Tampilkan jika cocok
+                    } else {
+                        card.style.display = "none";  // Sembunyikan jika tidak cocok
+                    }
+                });
+            });
+        });
+    });
+</script>
 
     <section id="experience" class="section bg-light">
     <div class="container">
@@ -614,124 +615,161 @@
     </div>
 </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
+<!-- Certifications Section -->
+<section id="certifications" class="section bg-light">
+    <div class="container">
+        <h2 class="section-title">Certifications</h2>
 
-            <!-- Filter Tabs -->
-            <div class="filter-tabs">
-                <button class="filter-btn active" data-filter="all">Semua</button>
-                <button class="filter-btn" data-filter="networking">Networking</button>
-                <button class="filter-btn" data-filter="system">System</button>
-                <button class="filter-btn" data-filter="security">Security</button>
-            </div>
-
-            <div class="certifications-grid">
-
-                <!-- Linux -->
-                <div class="certification-card" data-category="system">
-                    <div class="certification-image">
-                        <img src="img/sertifikat/Linux Dasar.png" alt="Belajar Linux dari Nol">
-                    </div>
-                    <div class="certification-content">
-                        <div class="certification-icon">
-                            <i class="fab fa-linux"></i>
-                        </div>
-                        <h3>Belajar Linux dari Nol</h3>
-                        <p>Command line Linux, manajemen user, permission, dan administrasi sistem dasar.</p>
-                        <div class="certification-footer">
-                            <span class="certification-date">Agustus 2024 – Agustus 2027</span>
-                            <a href="https://drive.google.com/file/d/1TjABKF-YCKfdV9RRud3BnmnGs-A6_ZaW/view?usp=sharing" class="certification-link">
-                                <i class="fas fa-certificate"></i> Lihat Sertifikat
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cisco -->
-                <div class="certification-card" data-category="networking">
-                    <div class="certification-image">
-                        <img src="img/sertifikat/Cisco Dasar.png" alt="Cisco Dasar">
-                    </div>
-                    <div class="certification-content">
-                        <div class="certification-icon">
-                            <i class="fab fa-cisco"></i>
-                        </div>
-                        <h3>Cisco Dasar</h3>
-                        <p>IP addressing, subnetting, routing dasar, dan konfigurasi perangkat Cisco.</p>
-                        <div class="certification-footer">
-                            <span class="certification-date">Mei 2024 – Mei 2027</span>
-                            <a href="https://drive.google.com/file/d/1x0DXhCoASmzzW2gJP5PYXVuzGpsE_zJ4/view?usp=sharing" class="certification-link">
-                                <i class="fas fa-certificate"></i> Lihat Sertifikat
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Jaringan Dasar -->
-                <div class="certification-card" data-category="networking">
-                    <div class="certification-image">
-                        <img src="img/sertifikat/Jaringan Komputer Dasar.png" alt="Jaringan Komputer Dasar">
-                    </div>
-                    <div class="certification-content">
-                        <div class="certification-icon">
-                            <i class="fas fa-network-wired"></i>
-                        </div>
-                        <h3>Jaringan Komputer Dasar</h3>
-                        <p>Topologi jaringan, OSI & TCP/IP, media transmisi, dan perangkat jaringan.</p>
-                        <div class="certification-footer">
-                            <span class="certification-date">Januari 2025 – Agustus 2028</span>
-                            <a href="https://drive.google.com/file/d/15ygInGKbQxwGOOH49c-onUe0TaaJ_4gR/view?usp=sharing" class="certification-link">
-                                <i class="fas fa-certificate"></i> Lihat Sertifikat
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Belajar Cyber Security dari Nol -->
-                <div class="certification-card" data-category="security">
-                    <div class="certification-image">
-                        <img src="img/sertifikat/Belajar Cyber Security dari Nol.png" alt="Belajar Cyber Security dari Nol">
-                    </div>
-                    <div class="certification-content">
-                        <div class="certification-icon">
-                            <i class="fas fa-user-shield"></i>
-                        </div>
-                        <h3>Belajar Cyber Security dari Nol</h3>
-                        <p>Dasar ethical hacking, jenis serangan, dan pengenalan tools keamanan.</p>
-                        <div class="certification-footer">
-                            <span class="certification-date">Januari 2025 – Januari 2028</span>
-                            <a href="#" class="certification-link">
-                                <i class="fas fa-certificate"></i> Lihat Sertifikat
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mikrotik -->
-                <div class="certification-card" data-category="networking">
-                    <div class="certification-image">
-                        <img src="img/sertifikat/mikrotik dasar.jpg" alt="Mikrotik Dasar">
-                    </div>
-                    <div class="certification-content">
-                        <div class="certification-icon">
-                            <i class="fas fa-wifi"></i>
-                        </div>
-                        <h3>Mikrotik Dasar</h3>
-                        <p>Routing, NAT, firewall, manajemen bandwidth, dan VPN dasar.</p>
-                        <div class="certification-footer">
-                            <span class="certification-date">Mei 2025 – Mei 2028</span>
-                            <a href="https://drive.google.com/file/d/1JbiodZEZbv5wmSH-MWZ_W1XvccJE0Ohp/view?usp=sharing" class="certification-link">
-                                <i class="fas fa-certificate"></i> Lihat Sertifikat
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <!-- Filter Tabs -->
+        <div class="filter-tabs" data-target="certifications-grid">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="networking">Networking</button>
+            <button class="filter-btn" data-filter="system">System</button>
+            <button class="filter-btn" data-filter="security">Security</button>
         </div>
-    </section>
+
+        <div class="certifications-grid">
+
+            <!-- Linux -->
+            <div class="certification-card" data-category="system">
+                <div class="certification-image">
+                    <img src="img/sertifikat/Linux Dasar.png" alt="Belajar Linux dari Nol" loading="lazy">
+                </div>
+                <div class="certification-content">
+                    <div class="certification-icon">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <h3>Belajar Linux dari Nol</h3>
+                    <p>Command line Linux, manajemen user, permission, dan administrasi sistem dasar.</p>
+                    <div class="certification-footer">
+                        <span class="certification-date">Agustus 2024 – Agustus 2027</span>
+                        <a href="https://drive.google.com/file/d/1TjABKF-YCKfdV9RRud3BnmnGs-A6_ZaW/view?usp=sharing" class="certification-link" target="_blank" rel="noopener">
+                            <i class="fas fa-certificate"></i> Lihat Sertifikat
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cisco -->
+            <div class="certification-card" data-category="networking">
+                <div class="certification-image">
+                    <img src="img/sertifikat/Cisco Dasar.png" alt="Cisco Dasar" loading="lazy">
+                </div>
+                <div class="certification-content">
+                    <div class="certification-icon">
+                        <i class="fab fa-cisco"></i>
+                    </div>
+                    <h3>Cisco Dasar</h3>
+                    <p>IP addressing, subnetting, routing dasar, dan konfigurasi perangkat Cisco.</p>
+                    <div class="certification-footer">
+                        <span class="certification-date">Mei 2024 – Mei 2027</span>
+                        <a href="https://drive.google.com/file/d/1x0DXhCoASmzzW2gJP5PYXVuzGpsE_zJ4/view?usp=sharing" class="certification-link" target="_blank" rel="noopener">
+                            <i class="fas fa-certificate"></i> Lihat Sertifikat
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jaringan Dasar -->
+            <div class="certification-card" data-category="networking">
+                <div class="certification-image">
+                    <img src="img/sertifikat/Jaringan Komputer Dasar.png" alt="Jaringan Komputer Dasar" loading="lazy">
+                </div>
+                <div class="certification-content">
+                    <div class="certification-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Jaringan Komputer Dasar</h3>
+                    <p>Topologi jaringan, OSI & TCP/IP, media transmisi, dan perangkat jaringan.</p>
+                    <div class="certification-footer">
+                        <span class="certification-date">Januari 2025 – Agustus 2028</span>
+                        <a href="https://drive.google.com/file/d/15ygInGKbQxwGOOH49c-onUe0TaaJ_4gR/view?usp=sharing" class="certification-link" target="_blank" rel="noopener">
+                            <i class="fas fa-certificate"></i> Lihat Sertifikat
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Belajar Cyber Security dari Nol -->
+            <div class="certification-card" data-category="security">
+                <div class="certification-image">
+                    <img src="img/sertifikat/Belajar Cyber Security dari Nol.png" alt="Belajar Cyber Security dari Nol" loading="lazy">
+                </div>
+                <div class="certification-content">
+                    <div class="certification-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Belajar Cyber Security dari Nol</h3>
+                    <p>Dasar ethical hacking, jenis serangan, dan pengenalan tools keamanan.</p>
+                    <div class="certification-footer">
+                        <span class="certification-date">Januari 2025 – Januari 2028</span>
+                        <a href="#" class="certification-link">
+                            <i class="fas fa-certificate"></i> Lihat Sertifikat
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mikrotik -->
+            <div class="certification-card" data-category="networking">
+                <div class="certification-image">
+                    <img src="img/sertifikat/mikrotik dasar.jpg" alt="Mikrotik Dasar" loading="lazy">
+                </div>
+                <div class="certification-content">
+                    <div class="certification-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Mikrotik Dasar</h3>
+                    <p>Routing, NAT, firewall, manajemen bandwidth, dan VPN dasar.</p>
+                    <div class="certification-footer">
+                        <span class="certification-date">Mei 2025 – Mei 2028</span>
+                        <a href="https://drive.google.com/file/d/1JbiodZEZbv5wmSH-MWZ_W1XvccJE0Ohp/view?usp=sharing" class="certification-link" target="_blank" rel="noopener">
+                            <i class="fas fa-certificate"></i> Lihat Sertifikat
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Skrip JavaScript Universal untuk Filter (Proyek & Sertifikasi) -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Mendukung semua grup filter yang ada di halaman
+        const filterGroups = document.querySelectorAll(".filter-tabs");
+
+        filterGroups.forEach(group => {
+            const filterBtns = group.querySelectorAll(".filter-btn");
+            // Cari kontainer grid terdekat berdasarkan struktur HTML di atasnya
+            const containerSelector = group.nextElementSibling;
+
+            if (!containerSelector) return;
+            const cards = containerSelector.querySelectorAll(".certification-card, .project-card");
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener("click", function () {
+                    // Hilangkan class active pada grup tombol ini saja
+                    filterBtns.forEach(b => b.classList.remove("active"));
+                    this.classList.add("active");
+
+                    const filterValue = this.getAttribute("data-filter");
+
+                    cards.forEach(card => {
+                        const cardCategory = card.getAttribute("data-category");
+
+                        if (filterValue === "all" || cardCategory === filterValue) {
+                            card.style.display = "block";
+                        } else {
+                            card.style.display = "none";
+                        }
+                    });
+                });
+            });
+        });
+    });
+</script>
 
     <!-- Contact Section -->
     <section id="contact" class="section">
